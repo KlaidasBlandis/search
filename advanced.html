@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    <body>
+    <nav class="navbar navbar-light bg-white" style="border: 1px solid lightgray;">
+        <div class="flex_nav_adv">
+            <a class="navbar-brand nav_margin" href="index.html">
+                <img class="nav_google"src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="" width="30" height="24">
+            </a>
+            <div class="nav_margin adv_search" style="margin-left: 40px;">
+                Avanced Search
+            </div>
+        </div>
+    </nav>
+    <div class="adv_margin">
+        <div class="form_div" style="font-size: 20px;">Find pages with... </div>
+        <form action="https://www.google.lt/search" class="flex_c_adv">
+            <div class="flex_left">
+                <div class="form_div">all these words: </div>
+                <input type="text" class="form_adv" autocomplete="off" name="as_q">
+            </div>
+            <div class="flex_left">
+                <div class="form_div">this exact word or phrase: </div>
+                <input type="text" class="form_adv" autocomplete="off" name="as_epq">
+            </div>
+            <div class="flex_left">
+                <div class="form_div">any of these words: </div>
+                <input type="text" class="form_adv" autocomplete="off" name="as_oq">
+            </div>
+            <div class="flex_left">
+                <div class="form_div">none of these words: </div>
+                <input type="text" class="form_adv" autocomplete="off" name="as_eq">
+            </div>
+            <div class="flex_left">
+                <div class="form_div"></div>
+                <div class="button_adv">
+                    <input type="hidden" name="tbs">
+                    <button class="btn btn-primary" type="submit">Advnaced Search</button> 
+                </div>     
+            </div>
+             
+        </form>
+    </div>
+    </body>
+</html>
